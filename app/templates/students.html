@@ -1,0 +1,8 @@
+<h1>Students list</h1>
+
+<title>{% block title %}{% endblock %}</title>
+<ol>
+    {% for student in students %}
+    <li>{{ student}}</li>
+    {% endfor %}
+</ol>

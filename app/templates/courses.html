@@ -1,0 +1,8 @@
+<h1>Courses list</h1>
+
+<title>{% block title %}{% endblock %}</title>
+<ol>
+    {% for course in courses %}
+    <li>{{ course}}</li>
+    {% endfor %}
+</ol>

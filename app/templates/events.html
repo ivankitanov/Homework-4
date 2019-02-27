@@ -1,0 +1,8 @@
+<h1>Events list</h1>
+
+<title>{% block title %}{% endblock %}</title>
+<ol>
+    {% for event in events %}
+    <li>{{ event}}</li>
+    {% endfor %}
+</ol>
