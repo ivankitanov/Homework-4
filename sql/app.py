@@ -62,9 +62,9 @@ def delete_student(id):
   return student_schema.jsonify(student)
 
 
-  class Course(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), unique=True)
+class Course(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  name = db.Column(db.String(100), unique=True)
   
 
   def __init__(self, name): 
@@ -109,9 +109,9 @@ def delete_course(id):
 
   return course_schema.jsonify(course)
 
-  class Event(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), unique=True)
+class Event(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  name = db.Column(db.String(100), unique=True)
   
 
   def __init__(self, name): 
